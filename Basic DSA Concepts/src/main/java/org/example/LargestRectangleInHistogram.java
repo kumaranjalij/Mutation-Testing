@@ -23,8 +23,4 @@ public class LargestRectangleInHistogram {
         return maxA;
     }
 
-    public static void main(String args[]) {
-        int histo[] = {3, 1, 5, 6, 2, 3};
-        System.out.println("The largest area in the histogram is " + largestRectangleArea(histo));
-    }
 }

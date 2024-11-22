@@ -7,7 +7,6 @@ public class KthElementOfTwoSortedArrays {
         if (m > n) return kthElement(b, a, n, m, k);
 
         int left = k; // length of left half
-
         // apply binary search:
         int low = Math.max(0, k - n), high = Math.min(k, m);
         while (low <= high) {
@@ -32,14 +31,4 @@ public class KthElementOfTwoSortedArrays {
         return 0; // dummy statement
     }
 
-    public static void main(String[] args) {
-        ArrayList<Integer> a = new ArrayList<>();
-        a.add(2); a.add(3); a.add(6); a.add(7); a.add(9);
-
-        ArrayList<Integer> b = new ArrayList<>();
-        b.add(1); b.add(4); b.add(8); b.add(10);
-
-        System.out.println("The k-th element of two sorted arrays is: " +
-                kthElement(a, b, a.size(), b.size(), 5));
-    }
 }
